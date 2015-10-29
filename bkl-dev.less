@@ -1381,6 +1381,25 @@ textarea {
 	min-height: 100px;
 }
 
+
+// Inputs: Radio and Checkbox
+// --------------------------
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.label--radio,
+.label--checkbox,
+.label--radio + .option-list,
+.label--checkbox  + .option-list,
+.option-list--radio > .option-item--radio,
+.option-list--checkbox > .option-item--checkbox {
+    display: inline-block;
+}
+
 // -------------------------
 // CORE: Image Lightbox 
 // -------------------------
@@ -1813,7 +1832,11 @@ body:after {
 // WIDGETS: Logo
 // ---------------------
 
-// No styles here...
+.logo {
+    line-height: 0;
+    font-size: 0;
+}
+
 // ---------------------
 // WIDGETS: Company Name
 // ---------------------
@@ -2391,6 +2414,17 @@ hr.rule {
     overflow: auto;
 }
 
+
+
+// -------------------------
+// WIDGETS: Fonecta
+// -------------------------
+
+
+.fonectacontactform input[type="checkbox"] + label {
+    display: inline-block !important;
+    vertical-align: middle;
+}
 
 
 
