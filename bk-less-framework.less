@@ -1288,22 +1288,20 @@ textarea {
 }
 
 
-// Inputs: Radio and Checkbox
+// Forms: Radio and Checkbox
 // --------------------------
 
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 10px;
-    display: inline-block;
+input[type=radio],
+input[type=checkbox],
+.label--radio,
+.label--checkbox {
+  display: inline;
+  vertical-align: middle;
 }
 
-.label--radio,
-.label--checkbox,
-.label--radio + .option-list,
-.label--checkbox  + .option-list,
-.option-list--radio > .option-item--radio,
-.option-list--checkbox > .option-item--checkbox {
-    display: inline-block;
+.option-item--radio,
+.option-item--checkbox {
+  list-style-type: none;
 }
 
 // -------------------------
@@ -2330,6 +2328,7 @@ hr.rule {
 .fonectacontactform input[type="checkbox"] + label {
     display: inline-block !important;
     vertical-align: middle;
+    width: auto;
 }
 
 
