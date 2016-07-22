@@ -1413,6 +1413,17 @@ input[type=checkbox],
   list-style-type: none;
 }
 
+
+// Form Validation
+// --------------------------
+
+.error {
+    border: 1px solid #f06262 !important; 
+    -webkit-animation: shakeOnError 0.65s 1;
+    -moz-animation: shakeOnError 0.65s 1;
+    animation: shakeOnError 0.65s 1;
+}
+
 // -------------------------
 // CORE: Image Lightbox 
 // -------------------------
@@ -1801,7 +1812,7 @@ body:after {
     background-color: rgba(0,0,0, 0.75);
     border: 1px solid #333;
     color: white;
-    font-family: @font-swatch1-font-family;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 600;
     bottom: 10px;
     left: 0;
@@ -1856,7 +1867,7 @@ body:after {
             line-height: 60px;
             top: 0;
         }
-         @media only screen and (max-width: 422px) {
+        @media only screen and (max-width: 422px) {
             line-height: 84px;
             right: 15px;
         }
