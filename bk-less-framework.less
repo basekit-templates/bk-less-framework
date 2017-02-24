@@ -2172,8 +2172,15 @@ img {
 
 .slide-item {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     &.current {
         display: list-item; // Current Item
+        position: relative;
     }
 }
 
