@@ -1297,6 +1297,33 @@ textarea {
 	min-height: 100px;
 }
 
+// Placeholder Text
+input,
+input:focus,
+textarea,
+textarea:focus {
+
+
+    &::-webkit-input-placeholder {
+      color: @color-swatch5;
+    }
+
+
+    &::-moz-placeholder {
+      color: @color-swatch5;
+    }
+
+
+    &:-ms-input-placeholder {
+      color: @color-swatch5;
+    }
+
+
+    &::placeholder {
+      color: @color-swatch5;
+    }
+}
+
 
 // Forms: Radio and Checkbox
 // --------------------------
