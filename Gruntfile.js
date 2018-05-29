@@ -20,7 +20,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     lesslint:{
-     src: ['bkl-dev.less']
+     src: ['bk-less-dev.less']
     },
     csslint: {
       options:{
@@ -32,14 +32,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-lesslint')
 
   // Default task(s).
-  grunt.registerTask('build', function () { 	
+  grunt.registerTask('build', function () {
   	var buildStr = recruseImports('bk-less-precompiled.less'),
         vars = grunt.file.read('vars.less');
-  	
+
     // This is the version that gets linted; includes
     // all the vars so linting doesn't fall over
-    grunt.file.write('bkl-dev.less', vars+buildStr);
-    
+    grunt.file.write('bk-less-dev.less', vars+buildStr);
+
     // This is the production version of bkb. The
     // one that will get released with BaseKit
     grunt.file.write('bk-less-framework.less', buildStr);
